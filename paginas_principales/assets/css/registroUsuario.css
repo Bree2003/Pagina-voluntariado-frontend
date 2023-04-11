@@ -1,0 +1,72 @@
+main{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.seccion_principal{
+  display: flex;
+  background-image: url('../img/registro.jpg');
+  background-position:center
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.texto_bienvenida{
+  color: white;
+  margin: 5em 3em;
+}
+
+.texto_bienvenida p{
+  margin: 0 20vh 0 0;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 3px;
+  margin: 5em 3em;
+  padding: 1em 0;
+}
+
+fieldset{
+  border-style: none;
+}
+
+.formulario_nombre{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario_nombre input{
+  margin: 0 1em;
+}
+
+.formulario_datos{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.formulario_datos input{
+  margin: 0 0 1em 0;
+}
+
+hr{
+  margin: 0 2em;
+}
+
+.seccion_secundaria section{
+  display: inline-block;
+  width: 40%;
+}
+
+main a{
+  text-decoration: none;
+  color: #2A9D8F;
+}
