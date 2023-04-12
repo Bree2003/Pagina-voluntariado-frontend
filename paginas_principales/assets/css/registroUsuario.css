@@ -8,30 +8,47 @@ main{
 .seccion_principal{
   display: flex;
   background-image: url('../img/registro.jpg');
-  background-position:center
+  background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
 }
 
 .texto_bienvenida{
   color: white;
-  margin: 5em 3em;
+  margin: 5em 3em 5em 25em;
+}
+
+.texto_bienvenida h1, .texto_bienvenida p{
+  margin: 0 20vh 0 0;
+  text-align: left;
+}
+
+.texto_bienvenida h1{
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 2vh 0;
 }
 
 .texto_bienvenida p{
-  margin: 0 20vh 0 0;
-  text-align: left;
-  font-weight: lighter;
+  font-size: 2.5em;
 }
 
 .formulario{
+  width: 85%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   border-radius: 3px;
-  margin: 5em 3em;
-  padding: 1em 0;
+  margin: 5em 20em 5em 3em;
+  padding: 1em 1em 2em 1em;
+}
+
+.formulario p{
+  font-size: 1em;
+  font-weight: bold;
 }
 
 fieldset{
@@ -41,26 +58,56 @@ fieldset{
 .formulario_nombre{
   display: flex;
   justify-content: space-between;
+  margin: 1em 0 0 0;
 }
 
 .formulario_nombre input{
-  margin: 0 1em;
+  width: 47%;
 }
 
 .formulario_datos{
+  height: 16em;
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  justify-content: space-between;
 }
 
 .formulario_datos input{
-  margin: 0 0 1em 0;
+  margin: 3em 0 0 0;
 }
 
-hr{
-  margin: 0 2em;
+#email{
+  margin: 1em 0 0 0;
 }
 
+input{
+  padding: 0 0 0 2px;
+  border-color: rgb(235, 235, 235);
+  border-style: solid;
+  color: rgb(235, 235, 235);
+  height: 4em;
+  border-radius: 3px;
+  border-width: 1px;
+  font-family: 'Inter', sans-serif;
+}
+
+.formulario_termino{
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_termino div{
+  align-items: center;
+}
+
+.formulario_termino label{
+  font-size: small;
+  font-weight: bold;
+}
+
+#terminos{
+  height: auto;
+}
 .seccion_secundaria section{
   display: inline-block;
   width: 40%;
@@ -69,4 +116,15 @@ hr{
 main a{
   text-decoration: none;
   color: #2A9D8F;
+}
+
+button{
+  margin: 1em 0;
+  padding: 0.5vh;
+  background-color: #264653;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  border-style: none;
+  border-radius: 13px;
 }
