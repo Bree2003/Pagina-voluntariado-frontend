@@ -30,11 +30,11 @@
             </nav>
         </header>
         <main>
-            <div class="seccion_principal">
-                <section class="texto_bienvenida">
+            <section id="seccion_principal">
+                <div class="texto_bienvenida">
                     <h1>Participa en programas y ayuda a las personas</h1>
                     <p>Accede a una red de programas comprometidos que buscan apoyar la vida diaria de las personas, fortalecer comunidades locales y generar un impacto social y ecológico en el mundo.</p>
-                </section>
+                </div>
 
                 <form action="#" class="formulario">
                     <h4>Registrarse como voluntario</h4>
@@ -42,6 +42,7 @@
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                         <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                     </fieldset>
+                    
                     <fieldset class="formulario_datos">
                         <input type="email" name="email" id="email" placeholder="Email">
                         <input type="email" name="email2" id="email2" placeholder="Confirme su e-mail">
@@ -58,58 +59,76 @@
                     <hr>
                     <p>Ya eres un miembro? <br> <a href="#">Iniciar sesión</a></p>
                 </form>
-            </div>
+            </section>
 
-            <div class="seccion_secundaria">
+            <section id="seccion_secundaria">
                 <h1>¿Cuáles son las ventajas de InspireUp?</h1>
-                <section>
-                    <img src="./assets/img/planeta-icono.png" alt="icono planeta">
-                    <h6>Voluntarios comprometidos</h6>
-                    <p>Encuentre a los voluntarios adecuados
-                        para su proyecto comprobando la
-                        información relevante del perfil, los
-                        certificados, las reseñas dejadas por
-                        otros gerentes y teniendo un proceso
-                        de contratación estructurado con
-                        nuestra plataforma.</p>
-                </section>
 
-                <section>
-                    <img src="./assets/img/alza-icono.png" alt="icono flecha en alza">
-                    <h6>Aumente su impacto</h6>
-                    <p>Únase a miles de proyectos de
-                        fundaciones en nuestra comunidad
-                        global que ha compartido más de
-                        100.000 experiencias de voluntariado,
-                        logrando +110.000 valoraciones con
-                        una puntuación media de los
-                        voluntarios de 4,7 (sobre 5)</p>
-                </section>
+                <div class="contenedor_ventajas">
+                    <div class="ventaja">
+                        <img src="./assets/img/planeta-icono.png" alt="icono planeta">
+                        <div>
+                            <h6>Voluntarios comprometidos</h6>
+                            <p>Encuentre a los voluntarios adecuados
+                                para su proyecto comprobando la
+                                información relevante del perfil, los
+                                certificados, las reseñas dejadas por
+                                otros gerentes y teniendo un proceso
+                                de contratación estructurado con
+                                nuestra plataforma.
+                            </p>
+                        </div>
+                    </div>
+                
 
-                <section>
-                    <img src="./assets/img/compu-icono.png" alt="icono monitor">
-                    <h6>Sitio web y aplicación fáciles de usar</h6>
-                    <p>Compruebe las solicitudes de los
-                        voluntarios, organice sus llegadas y
-                        salidas en el calendario, edite sus
-                        puestos y audio para tener un proceso
-                        de reclutamiento refinado.</p>
-                </section>
+                    <div class="ventaja">
+                        <img src="./assets/img/alza-icono.png" alt="icono flecha en alza">
+                        <div>
+                        <h6>Aumente su impacto</h6>
+                            <p>Únase a miles de proyectos de
+                                fundaciones en nuestra comunidad
+                                global que ha compartido más de
+                                100.000 experiencias de voluntariado,
+                                logrando +110.000 valoraciones con
+                                una puntuación media de los
+                                voluntarios de 4,7 (sobre 5)
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                <section>
-                    <img src="./assets/img/verificado-icono.png" alt="icono ticket">
-                    <h6>Comunidad segura</h6>
-                    <p>Nos preocupa su <a href="../paginas_principales/politicaPrivacidad.html">privacidad</a>.
-                        Intercambiar mensajes de texto y
-                        audio a través de la plataforma
-                        InspireUp sin dar acceso a información
-                        personal a los solicitantes. Confíe en
-                        nuestra <a href="#">Politica de Calidad y seguridad de las Experiencias</a>
-                        para evitar la ausencias, las cancelacioens
-                        de última hora y los voluntarios que no
-                        encajan en su proyecto.</p>
-                </section>
-            </div>
+                <div class="contenedor_ventajas">
+                    <div class="ventaja">
+                        <img src="./assets/img/compu-icono.png" alt="icono monitor">
+                        <div>
+                            <h6>Sitio web y aplicación fáciles de usar</h6>
+                            <p>Compruebe las solicitudes de los
+                                voluntarios, organice sus llegadas y
+                                salidas en el calendario, edite sus
+                                puestos y audio para tener un proceso
+                                de reclutamiento refinado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ventaja">
+                        <img src="./assets/img/verificado-icono.png" alt="icono ticket">
+                        <div>
+                            <h6>Comunidad segura</h6>
+                            <p>Nos preocupa su <a href="../paginas_principales/politicaPrivacidad.html">privacidad</a>.
+                                Intercambiar mensajes de texto y
+                                audio a través de la plataforma
+                                InspireUp sin dar acceso a información
+                                personal a los solicitantes. Confíe en
+                                nuestra <a href="#">Politica de Calidad y seguridad de las Experiencias</a>
+                                para evitar la ausencias, las cancelacioens
+                                de última hora y los voluntarios que no
+                                encajan en su proyecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="primera_seccion">

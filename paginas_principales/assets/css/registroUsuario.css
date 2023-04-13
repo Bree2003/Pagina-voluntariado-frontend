@@ -5,15 +5,28 @@ main{
   font-family: 'Inter', sans-serif;
 }
 
-.seccion_principal{
+main a{
+  text-decoration: none;
+  color: #2A9D8F;
+}
+
+main a:hover{
+  text-decoration: underline;
+}
+
+/* ----- SECCION 1 ----- */
+#seccion_principal{
+  margin: 0 0 1em 0;
   display: flex;
-  background-image: url('../img/registro.jpg');
+  background-image: linear-gradient(rgba(40, 120, 15, 0.3), rgba(40, 120, 15, 0.3)),
+  url('../img/registro.jpg');
   background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
 }
 
+/* ----- BIENVENIDA ----- */
 .texto_bienvenida{
   color: white;
   margin: 5em 3em 5em 25em;
@@ -34,6 +47,7 @@ main{
   font-size: 2.5em;
 }
 
+/* ----- FORMULARIO ----- */
 .formulario{
   width: 85%;
   height: 70vh;
@@ -85,10 +99,11 @@ input{
   border-color: rgb(235, 235, 235);
   border-style: solid;
   color: rgb(235, 235, 235);
-  height: 4em;
+  height: 2em;
   border-radius: 3px;
   border-width: 1px;
   font-family: 'Inter', sans-serif;
+  font-size: 1em;
 }
 
 .formulario_termino{
@@ -108,15 +123,6 @@ input{
 #terminos{
   height: auto;
 }
-.seccion_secundaria section{
-  display: inline-block;
-  width: 40%;
-}
-
-main a{
-  text-decoration: none;
-  color: #2A9D8F;
-}
 
 button{
   margin: 1em 0;
@@ -128,3 +134,32 @@ button{
   border-style: none;
   border-radius: 13px;
 }
+
+/* ----- SECCION 2 ----- */
+#seccion_secundaria img{
+  margin: 0 1em 0 0;
+}
+
+.contenedor_ventajas{
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0 0 0;
+}
+
+.ventaja{
+  margin: 0 0 2em 0;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  text-align: left;
+}
+
+.ventaja p{
+  color: grey;
+  font-size: 1em;
+}
+
+.ventaja h6{
+  font-size: 1em;
+}
+
