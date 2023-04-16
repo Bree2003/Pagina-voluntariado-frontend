@@ -124,17 +124,74 @@ div h6 {
 
 /* TABLET */
 @media screen and (min-width: 481px) and (max-width: 1023px){
-    header h1{
-        text-align: center;
-        align-self: center;
+    li > h3{
+        font-size: 0.8em;
+    }
+    
+    li.elemento {
+        margin: 0 10px 0 0;
+    }
+
+    .segunda_seccion{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .segunda_seccion div{
+        margin: 0 2em 0 0;
+    }
+
+    div.tercero{
+        width: 10%;
+    }
+
+    div.cuarto{
+        width: 20%;
     }
 }
 
 /* CELULAR */
 @media screen and (max-width: 480px) {
-
-    .contenedor_principal{
-        display: block;
+    
+    header > h1 {
+        font-size: 1em;
     }
 
+    li > h3{
+        font-size: 0.5em;
+    }
+
+    li.elemento {
+        margin: 0 10px 0 0;
+    }
+
+    footer{
+        padding: 0 10px;
+    }
+
+    a.iconos{
+        10px 0 0 0;
+    }
+    
+    .segunda_seccion{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .segunda_seccion div{
+        margin: 0 1em 0 0;
+    }
+
+    div.tercero{
+        width: 10%;
+    }
+
+    div.cuarto{
+        width: 10%;
+    }
+
+    h6{
+        font-weight: normal;
+        font-size: 0.5em;
+    }
 }
