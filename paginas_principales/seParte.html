@@ -7,11 +7,12 @@
     <title>Se Parte</title>
     <!-- linkeado a css -->
     <link rel="stylesheet" href="./assets/css/nav_footer.css">
+    <link rel="stylesheet" href="./assets/css/registroUsuario.css">
     <!-- import de google fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;300;700&display=swap');
     </style>
 </head>
 <body>
@@ -28,7 +29,107 @@
                 </ul>
             </nav>
         </header>
-        <main>TODO LO QUE SE VA A DESARROLLAR DENTRO DE LA PÁGINA SE HACE DENTRO DE ESTE MAIN</main>
+        <main>
+            <section id="seccion_principal">
+                <div class="texto_bienvenida">
+                    <h1 class="texto">Participa en programas y ayuda a las personas</h1>
+                    <p class="texto">Accede a una red de programas comprometidos que buscan apoyar la vida diaria de las personas, fortalecer comunidades locales y generar un impacto social y ecológico en el mundo.</p>
+                </div>
+
+                <form action="#" class="formulario">
+                    <h4>Registrarse como voluntario</h4>
+                    <fieldset class="campo_formulario" id="formulario_nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    </fieldset>
+                    
+                    <fieldset class="campo_formulario" id="formulario_datos">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email2" id="email2" placeholder="Confirme su e-mail">
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </fieldset>
+
+                    <fieldset class="campo_formulario" id="formulario_termino">
+                        <div class="form_terminos">
+                            <input type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos">Yo acepto los <a href="../paginas_principales/terminosUso.html">términos de uso</a>, <a href="../paginas_principales/politicaPrivacidad.html">privacidad</a> y <a href="../paginas_principales/politicaPrivacidad.html">evaluaciones</a> de InspireUp</label>
+                        </div>
+                        <button type="submit">Registrate</button>
+                    </fieldset>
+                    <hr>
+                    <p>Ya eres un miembro? <br> <a href="#">Iniciar sesión</a></p>
+                </form>
+            </section>
+
+            <section id="seccion_secundaria">
+                <h1>¿Cuáles son las ventajas de InspireUp?</h1>
+
+                <div class="contenedor_ventajas">
+                    <div class="ventaja">
+                        <img src="./assets/img/planeta-icono.png" alt="icono planeta">
+                        <div>
+                            <h6>Voluntarios comprometidos</h6>
+                            <p>Encuentre a los voluntarios adecuados
+                                para su proyecto comprobando la
+                                información relevante del perfil, los
+                                certificados, las reseñas dejadas por
+                                otros gerentes y teniendo un proceso
+                                de contratación estructurado con
+                                nuestra plataforma.
+                            </p>
+                        </div>
+                    </div>
+                
+
+                    <div class="ventaja">
+                        <img src="./assets/img/alza-icono.png" alt="icono flecha en alza">
+                        <div>
+                        <h6>Aumente su impacto</h6>
+                            <p>Únase a miles de proyectos de
+                                fundaciones en nuestra comunidad
+                                global que ha compartido más de
+                                100.000 experiencias de voluntariado,
+                                logrando +110.000 valoraciones con
+                                una puntuación media de los
+                                voluntarios de 4,7 (sobre 5)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor_ventajas">
+                    <div class="ventaja">
+                        <img src="./assets/img/compu-icono.png" alt="icono monitor">
+                        <div>
+                            <h6>Sitio web y aplicación fáciles de usar</h6>
+                            <p>Compruebe las solicitudes de los
+                                voluntarios, organice sus llegadas y
+                                salidas en el calendario, edite sus
+                                puestos y audio para tener un proceso
+                                de reclutamiento refinado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ventaja">
+                        <img src="./assets/img/verificado-icono.png" alt="icono ticket">
+                        <div>
+                            <h6>Comunidad segura</h6>
+                            <p>Nos preocupa su <a href="../paginas_principales/politicaPrivacidad.html">privacidad</a>.
+                                Intercambiar mensajes de texto y
+                                audio a través de la plataforma
+                                InspireUp sin dar acceso a información
+                                personal a los solicitantes. Confíe en
+                                nuestra <a href="#">Politica de Calidad y seguridad de las Experiencias</a>
+                                para evitar la ausencias, las cancelacioens
+                                de última hora y los voluntarios que no
+                                encajan en su proyecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="primera_seccion">
                 <a href="inicio.html"><h2>InspireUp</h2></a>

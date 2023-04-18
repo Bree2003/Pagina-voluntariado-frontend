@@ -1,0 +1,212 @@
+main{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+main a{
+  text-decoration: none;
+  color: #2A9D8F;
+}
+
+main a:hover{
+  text-decoration: underline;
+}
+
+/* ----- SECCION 1 ----- */
+#seccion_principal{
+  margin: 0 0 1em 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(rgba(40, 120, 15, 0.3), rgba(40, 120, 15, 0.3)),
+  url('../img/registro.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size:cover;
+  align-items: center;
+}
+
+/* ----- BIENVENIDA ----- */
+.texto_bienvenida{
+  color: white;
+  margin: 1em;
+  width: 45%;
+}
+
+.texto{
+  text-align: left;
+}
+
+.texto_bienvenida h1{
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 0 0 1vh 0;
+}
+
+.texto_bienvenida p{
+  font-size: 2em;
+}
+
+/* ----- FORMULARIO ----- */
+.formulario{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 3px;
+  margin: 3vh 1vh;
+  padding: 1em 1em 2em 1em;
+}
+
+.formulario p{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+fieldset{
+  border-style: none;
+}
+
+.campo_formulario{
+  margin: 1em 0 0 0;
+}
+
+#formulario_nombre{
+  display: flex;
+  justify-content: space-between;
+}
+
+#formulario_nombre input{
+  width: 47%;
+}
+
+#formulario_datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#formulario_datos input{
+  margin: 1em 0 0 0;
+  width: 99%;
+}
+
+input{
+  padding: 0 0 0 2px;
+  border-color: rgb(235, 235, 235);
+  border-style: solid;
+  color: rgb(235, 235, 235);
+  height: 2em;
+  border-radius: 3px;
+  border-width: 1px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+}
+
+#formulario_termino{
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario_termino div{
+  align-items: center;
+}
+
+#formulario_termino label{
+  font-size: small;
+  font-weight: bold;
+}
+
+#terminos{
+  height: auto;
+}
+
+button{
+  margin: 1em 0;
+  padding: 0.5vh;
+  background-color: #264653;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  border-style: none;
+  border-radius: 13px;
+}
+
+/* ----- SECCION 2 ----- */
+#seccion_secundaria img{
+  margin: 0 1em 0 0;
+}
+
+.contenedor_ventajas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.ventaja{
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  text-align: left;
+}
+
+.ventaja p{
+  color: grey;
+  font-size: 1em;
+}
+
+.ventaja h6{
+  font-size: 1em;
+}
+
+/* ----- TABLET ----- */
+@media screen and (min-width: 481px) and (max-width: 1023px){
+
+  #seccion_principal{
+    width: fit-content;
+  }
+
+  .texto{
+    font-size: 2em !important;
+  }
+
+  .formulario{
+    height: 50%;
+  }
+}
+
+/* ----- CELULAR ----- */
+@media screen and (max-width: 480px) {
+  #seccion_principal{
+    width: fit-content;
+    display: inline-block;
+  }
+
+  .texto_bienvenida{
+    width: 98%;
+  }
+
+  .texto_bienvenida h1, .texto_bienvenida p {
+    text-align: center;
+}
+
+  .texto{
+    font-size: 2em !important;
+  }
+  
+  .formulario{
+    width: fit-content;
+  }
+  
+  .contenedor_ventajas{
+    display: inline-block;
+  }
+
+  .ventaja{
+    width: 95%;
+  }
+}
