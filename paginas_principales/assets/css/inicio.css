@@ -1,0 +1,79 @@
+section#encabezado {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/inicio-voluntariado.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+div#texto-encabezado {
+    font-size: 2.5em;
+    margin: 3em 0;
+}
+div#texto-encabezado > h1 {
+    margin-bottom: 1em;
+}
+div.promocion {
+    display: flex;
+    margin: 4em 0
+}
+div.promocion > div {
+    width: 50%;
+    text-align: center;
+}
+div#donacion {
+    font-size: 1.5em;
+}
+div#donacion > p {
+    margin-bottom: 1em;
+}
+a.boton {
+    background-color: #e76f51;
+    border-radius: 10px;
+    padding: 0.2em 1em;
+    color: white;
+    text-decoration: none;
+}
+div#carrusel {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+}
+div.eduardo-galeano {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/frase.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border-radius: 10px;
+}
+div.texto {
+    font-size: 3em;
+}
+div.texto > p {
+    padding: 0.7em 0;
+}
+section.tipos-voluntariados {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+section.tipos-voluntariados > article {
+    width: 30%;
+    text-align: center;
+}
+article > img {
+    width: 100%;
+    height: 15em;
+    border-radius: 10px;
+}
+section.tipos-voluntariados h1 {
+    font-size: 2em;
+}
+section.tipos-voluntariados h2 {
+    font-size: 1.5em;
+}
+section.tipos-voluntariados p {
+    margin: 1em 0;
+}
