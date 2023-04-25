@@ -87,7 +87,7 @@ div.redes_sociales {
     align-self: end;
     float: right;
 }
-div img {
+div.redes_sociales img {
     width: 20px;
     height: 20px;
 }
