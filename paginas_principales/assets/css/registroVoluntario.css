@@ -126,13 +126,14 @@ input{
 
 button{
   margin: 1em 0;
-  padding: 0.5vh;
+  padding: 1.5vh;
   background-color: #264653;
   color: white;
   font-family: 'Inter', sans-serif;
   font-size: 1em;
   border-style: none;
-  border-radius: 13px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* ----- SECCION 2 ----- */
