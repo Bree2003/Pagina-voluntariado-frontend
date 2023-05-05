@@ -38,28 +38,11 @@ const validateEmptyField = (e) => {
     }
 }
 
-const validateLargeField = (e) => {
-    const field = e.target;
-    const fieldValue = e.target.value;
-    if (fieldValue.trim().length > 0 && fieldValue.trim().length < 3) {
-        field.classList.add("error");
-        field.classList.remove("validado");
-        field.nextElementSibling.classList.add("error");
-        field.nextElementSibling.innerText = "El campo debe ser mayor a 3 carácteres";
-    } else if (fieldValue.trim().length >= 3) {
-        // quitamos la clase error
-        field.classList.remove("error");
-        field.nextElementSibling.classList.remove("error");
-        field.nextElementSibling.innerText = "";
-        // agregamos la clase validado
-        field.classList.add("validado");
-    }
-}
 
 const validateEmailFormat = (e) => {
     const field = e.target;
     const fieldValue = e.target.value;
-    const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
+    const regex = new RegExp(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/);
     // una cantidad de cosas, un arroba, una cantidad de cosas, un punto, una cantidad de cosas
     if (fieldValue.trim().length > 0 && !regex.test(fieldValue)) {
         field.classList.add("error");
