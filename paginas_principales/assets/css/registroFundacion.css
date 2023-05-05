@@ -5,7 +5,12 @@ main {
   font-family: 'Inter', sans-serif;
 }
 
-main a {
+form a {
+  text-decoration: none;
+  color: #F4A261;
+}
+
+#seccion_secundaria a {
   text-decoration: none;
   color: #2A9D8F;
 }
@@ -20,7 +25,7 @@ main a:hover {
   display: flex;
   justify-content: space-around;
   background-image: url(../img/registro.jpg);
-  box-shadow: inset 600px 600px 0px 0px rgba(42, 157, 143, 0.2);
+  box-shadow: inset 600px 600px 0px 0px rgba(244, 162, 97, 0.2);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -127,7 +132,7 @@ input {
 button {
   margin: 1em 0;
   padding: 1.5vh;
-  background-color: #264653;
+  background-color: #E76F51;
   color: white;
   font-family: 'Inter', sans-serif;
   font-size: 1em;
@@ -166,6 +171,21 @@ button {
   font-size: 1em;
 }
 
+/* VALIDACIÓN */
+input.error {
+  /* border-color: red; */
+  border: solid 1px red;
+}
+
+span.error {
+  color: red;
+}
+
+input.validado {
+  border: solid 1px green;
+  /* izquierda-derecha - arriba-abajo */
+}
+
 /* ----- TABLET ----- */
 @media screen and (min-width: 481px) and (max-width: 1023px) {
 
@@ -180,21 +200,6 @@ button {
   .formulario {
     height: 50%;
   }
-}
-
-/* VALIDACIÓN */
-input.error {
-  /* border-color: red; */
-  border: solid 1px red;
-}
-
-span.error {
-  color: red;
-}
-
-input.validado {
-  border: solid 1px green;
-  /* izquierda-derecha - arriba-abajo */
 }
 
 /* ----- CELULAR ----- */
