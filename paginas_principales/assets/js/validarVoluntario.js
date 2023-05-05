@@ -60,7 +60,7 @@ const validateLargeField = (e) => {
 const validateEmailFormat = (e) => {
     const field = e.target;
     const fieldValue = e.target.value;
-    const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
+    const regex = new RegExp(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/);
     // una cantidad de cosas, un arroba, una cantidad de cosas, un punto, una cantidad de cosas
     if (fieldValue.trim().length > 0 && !regex.test(fieldValue)) {
         field.classList.add("error");
@@ -98,24 +98,6 @@ var Rut = {
     }
 };
 
-const validateRut = (e) => {
-    const field = e.target;
-    const fieldValue = e.target.value;
-    if (fieldValue.trim().length > 0 && !Rut.validaRut(fieldValue)) {
-        field.classList.add("error");
-        field.classList.remove("validado");
-        field.nextElementSibling.classList.add("error");
-        field.nextElementSibling.innerText = "RUT inválido";
-    } else if (Rut.validaRut(fieldValue)) {
-        // quitamos la clase error
-        field.classList.remove("error");
-        field.nextElementSibling.classList.remove("error");
-        field.nextElementSibling.innerText = "";
-        // agregamos la clase validado
-        field.classList.add("validado");
-    }
-}
-
 const validatePhoneNumber = (e) => {
     const field = e.target;
     const fieldValue = e.target.value;
@@ -142,6 +124,7 @@ nombre.addEventListener("blur", validateEmptyField2);
 apellido.addEventListener("blur", validateEmptyField2);
 correo.addEventListener("blur", validateEmptyField);
 telefono.addEventListener("blur", validateEmptyField);
+contrasena.addEventListener("blur", validateEmptyField);
 
 // si el campo tiene menos de 3 carácteres
 nombre.addEventListener("blur", validateLargeField);

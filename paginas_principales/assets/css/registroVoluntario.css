@@ -39,7 +39,7 @@ main a:hover {
   text-align: left;
 }
 
-.texto_bienvenida h1 {
+.texto_bienvenida h2 {
   font-weight: bolder;
   font-size: 3em;
   margin: 0 0 1vh 0;
