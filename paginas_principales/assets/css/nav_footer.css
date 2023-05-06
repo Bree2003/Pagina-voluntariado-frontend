@@ -1,72 +1,96 @@
-.not-active { 
-    pointer-events: none; 
-    cursor: default; 
-} 
-
 /* display */
 
-body, * {
+body,
+* {
     margin: 0;
     padding: 0;
 }
+
 .contenedor_principal {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* representa el 100% de la altura de la ventana gráfica */
+    min-height: 100vh;
+    /* representa el 100% de la altura de la ventana gráfica */
 }
+
 header {
-    flex-grow: 0.1; /* proporciones de la pantalla */
+    flex-grow: 0.1;
+    /* proporciones de la pantalla */
     margin: 20px;
 }
-header > h1 {
+
+header>h1 {
     float: left;
     font-family: 'Dancing Script', cursive;
 }
-header h1 > a {
+
+header h1>a {
     text-decoration: none;
     color: #264653;
 }
-header > nav {
+
+header>nav {
     float: right;
 }
+
 nav {
     display: flex;
     align-items: center;
 }
-nav > ul {
+
+nav>ul {
     display: flex;
     list-style: none;
     align-items: baseline;
 }
+
 li.elemento {
     margin: 0 20px 0 0;
 }
+
 li.elemento a {
     color: #2A9D8F;
     text-decoration: none;
 }
+
 li.boton {
     background-color: #E76F51;
     color: white;
     border-radius: 10px;
 }
+
 li.boton a {
     text-decoration: none;
     color: white;
 }
-li.boton > h3 {
-    padding: 5px 20px; /* vertical - horizontal */
+
+li.elemento:hover {
+    transform: scale(1.1);
+    transition: 0.2s all;
 }
-li > h3 {
+
+li.boton:hover {
+    transform: scale(1.2);
+    transition: 0.2s all;
+}
+
+li.boton>h3 {
+    padding: 5px 20px;
+    /* vertical - horizontal */
+}
+
+li>h3 {
     /* font-weight: lighter;
     font-family: 'Alkatra', cursive; */
     font-family: 'Inter', sans-serif;
     font-size: unset;
 }
+
 main {
     flex-grow: 0.8;
     padding: 0 20px;
 }
+
 footer {
     flex-grow: 0.1;
     display: flex;
@@ -74,42 +98,53 @@ footer {
     justify-content: center;
     padding: 0 20px;
 }
-footer > div {
+
+footer>div {
     padding: 20px 0;
 }
-div.primera_seccion > a{
+
+div.primera_seccion>a {
     float: left;
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
     color: white;
 }
+
 div.redes_sociales {
     align-self: end;
     float: right;
 }
+
 div.redes_sociales img {
     width: 20px;
     height: 20px;
 }
+
 a.iconos {
-    margin: 0 0 0 20px; /* arriba - derecha - abajo - izquierda */
+    margin: 0 0 0 20px;
+    /* arriba - derecha - abajo - izquierda */
 }
+
 div.primero {
     float: left;
     width: 10%;
 }
+
 div.segundo {
     float: left;
     width: 10%;
 }
+
 div.tercero {
     float: left;
     width: 30%;
 }
+
 div.cuarto {
     float: right;
 }
-h6 >a {
+
+h6>a {
     text-decoration: none;
     color: white;
 }
@@ -120,6 +155,7 @@ footer {
     color: white;
     background-color: #264653;
 }
+
 div h6 {
     /* font-family: 'Alkatra', cursive;
     font-weight: lighter; */
@@ -128,41 +164,41 @@ div h6 {
 
 
 /* TABLET */
-@media screen and (min-width: 481px) and (max-width: 1023px){
-    li > h3{
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    li>h3 {
         font-size: 0.8em;
     }
-    
+
     li.elemento {
         margin: 0 10px 0 0;
     }
 
-    .segunda_seccion{
+    .segunda_seccion {
         display: flex;
         justify-content: space-between;
     }
 
-    .segunda_seccion div{
+    .segunda_seccion div {
         margin: 0 2em 0 0;
     }
 
-    div.tercero{
+    div.tercero {
         width: 10%;
     }
 
-    div.cuarto{
+    div.cuarto {
         width: 20%;
     }
 }
 
 /* CELULAR */
 @media screen and (max-width: 480px) {
-    
-    header > h1 {
+
+    header>h1 {
         font-size: 1em;
     }
 
-    li > h3{
+    li>h3 {
         font-size: 0.5em;
     }
 
@@ -170,32 +206,29 @@ div h6 {
         margin: 0 10px 0 0;
     }
 
-    footer{
+    footer {
         padding: 0 10px;
     }
 
-    a.iconos{
-        10px 0 0 0;
-    }
-    
-    .segunda_seccion{
+
+    .segunda_seccion {
         display: flex;
         justify-content: space-between;
     }
 
-    .segunda_seccion div{
+    .segunda_seccion div {
         margin: 0 1em 0 0;
     }
 
-    div.tercero{
+    div.tercero {
         width: 10%;
     }
 
-    div.cuarto{
+    div.cuarto {
         width: 10%;
     }
 
-    h6{
+    h6 {
         font-weight: normal;
         font-size: 0.5em;
     }
