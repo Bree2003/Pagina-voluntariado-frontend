@@ -11,7 +11,7 @@ const token = objetoUsuario.user.stsTokenManager.accessToken;
 const baseUrl = 'http://localhost:3000';
 const url = baseUrl + '/usuario/checktoken';
 fetch(url, {
-    method: 'POST',
+    method: 'GET',
     headers: {
         'Content-Type': 'application/json',
         'Authentication': 'Bearer ' + token;

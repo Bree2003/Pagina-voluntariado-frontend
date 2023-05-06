@@ -41,6 +41,8 @@ formulario.addEventListener("submit", async (submitEvent) => {
         // en caso de exito
         const objetoJson = await respuesta.json();
         console.dir(objetoJson);
+        // redirijo a página protegida
+        window.location = 'participa.html';
 
     } catch (error) {
         // gestion errores
