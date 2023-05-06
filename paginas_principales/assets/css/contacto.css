@@ -1,0 +1,94 @@
+main {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+section.parrafo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/contacto.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: white;
+    font-size: 2em;
+    padding: 15% 30% 10% 5%;
+}
+
+section.parrafo p {
+    margin-top: 1em;
+}
+
+div.segunda-seccion {
+    display: flex;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 0 20px;
+}
+
+section.contacto {
+    width: 50%;
+}
+
+section.contacto h4 {
+    margin-top: 1em;
+}
+
+section.contacto p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+aside.formulario {
+    width: 50%;
+}
+
+input {
+    margin-top: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    border-color: white;
+    padding: 0.5em;
+}
+
+#nombre,
+#telefono {
+    width: 45%;
+}
+
+#email {
+    width: 93%;
+}
+
+#mensaje {
+    width: 93%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+div.enviar-boton {
+    text-align: right;
+    margin: 1em 2em 1em 0;
+}
+
+button {
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #E76F51;
+}
+
+section.mapa {
+    margin: 2em 0;
+    text-align: center;
+    color: #2a9d8f;
+}
+
+div.mapa-contenido {
+    margin: 2em 0;
+}

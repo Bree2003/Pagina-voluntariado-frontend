@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contacto</title>
     <!-- linkeado a css -->
     <link rel="stylesheet" href="./assets/css/nav_footer.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
     <!-- import de google fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -14,40 +16,107 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
     </style>
 </head>
+
 <body>
     <div class="contenedor_principal">
         <header>
             <h1><a href="inicio.html">InspireUp</a></h1>
             <nav>
                 <ul>
-                    <li class="elemento"><h3><a href="comoFunciona.html">CÓMO FUNCIONA</a></h3></li>
-                    <li class="elemento"><h3><a href="voluntariado.html" class="not-active">VOLUNTARIADO</a></h3></li>
-                    <li class="elemento"><h3><a href="comunidad.html" class="not-active">COMUNIDAD</a></h3></li>
-                    <li class="elemento"><h3><a href="contacto.html">CONTACTO</a></h3></li>
-                    <li class="boton"><h3><a href="participa.html">Participa</a></h3></li>
+                    <li class="elemento">
+                        <h3><a href="#">CÓMO FUNCIONA</a></h3>
+                    </li>
+                    <li class="elemento">
+                        <h3><a href="#">VOLUNTARIADO</a></h3>
+                    </li>
+                    <li class="elemento">
+                        <h3><a href="#">COMUNIDAD</a></h3>
+                    </li>
+                    <li class="elemento">
+                        <h3><a href="contacto.html">CONTACTO</a></h3>
+                    </li>
+                    <li class="boton">
+                        <h3><a href="participa.html">Participa</a></h3>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <main>TODO LO QUE SE VA A DESARROLLAR DENTRO DE LA PÁGINA SE HACE DENTRO DE ESTE MAIN</main>
+        <main>
+            <section class="parrafo">
+                <h2>HABLEMOS</h2>
+                <p>En InspireUp estámos comprometidos en construir una comunidad más justa para todos y todas.</p>
+                <p>Comunícate con nosotros por los siguientes medios.</p>
+            </section>
+            <div class="segunda-seccion">
+                <section class="contacto">
+
+                    <h4>Contacto Oficina Nacional:</h4>
+                    <p>info.chile@inspireup.cl <br>
+                        (02) 2 2838 7300</p>
+                    <p>Departamental 440, San Joaquín, Santiago, <br>
+                        Región Metropolitana.</p>
+                    <h4>Contacto Socios/as:</h4>
+                    <p>individuos.chile@inspireup.cl <br>
+                        Disponible de Lunes a Viernes de 10 a 18 Hs.</p>
+                    <h4>Contacto CES-Chile:</h4>
+                    <p>ces.chile@inspire.up.cl</p>
+                </section>
+                <aside class="formulario">
+                    <form action="contacto.html" method="post">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <div class="enviar-boton"><button type="submit">Enviar</button></div>
+
+                    </form>
+                </aside>
+            </div>
+            <section class="mapa">
+                <h2>Encuentrános!</h2>
+                <div class="mapa-contenido"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.766531775117!2d-70.6382977847992!3d-33.50745088075759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dabd70c70059%3A0x310a0ad097e4d035!2sAv.%20Departamental%20440%2C%208960439%20San%20Joaqu%C3%ADn%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1683351846656!5m2!1ses-419!2scl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </section>
+        </main>
         <footer>
             <div class="primera_seccion">
-                <a href="inicio.html"><h2>InspireUp</h2></a>
+                <a href="inicio.html">
+                    <h2>InspireUp</h2>
+                </a>
                 <div class="redes_sociales">
-                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/facebook.png" alt="logo facebook"></a>
-                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/twitter.png" alt="logo twitter"></a>
-                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/instagram.png" alt="logo instagram"></a>
-                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/linkedin.png" alt="logo linkedin"></a>
-                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/youtube.png" alt="logo youtube"></a>
+                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/facebook.png"
+                            alt="logo facebook"></a>
+                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/twitter.png"
+                            alt="logo twitter"></a>
+                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/instagram.png"
+                            alt="logo instagram"></a>
+                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/linkedin.png"
+                            alt="logo linkedin"></a>
+                    <a href="#" class="iconos" target="_blank"><img src="./assets/img/youtube.png"
+                            alt="logo youtube"></a>
                 </div>
             </div>
             <hr>
             <div class="segunda_seccion">
-                <div class="primero"><h6><a href="politicaPrivacidad.html">POLÍTICAS DE PRIVACIDAD</a></h6></div>
-                <div class="segundo"><h6><a href="terminosUso.html">TÉRMINOS DE USO</a></h6></div>
-                <div class="tercero"><h6><a href="https://github.com/Bree2003/Pagina-voluntariado-frontend" target="_blank">DESARROLLADO POR BREE2003 Y LITTLESONIK</a></h6></div>
-                <div class="cuarto"><h6>© 2023 INSPIREUP INTERNACIONAL</h6></div>
+                <div class="primero">
+                    <h6><a href="#">POLÍTICAS DE PRIVACIDAD</a></h6>
+                </div>
+                <div class="segundo">
+                    <h6><a href="#">TÉRMINOS DE USO</a></h6>
+                </div>
+                <div class="tercero">
+                    <h6><a href="https://github.com/Bree2003/Pagina-voluntariado-frontend" target="_blank">DESARROLLADO
+                            POR BREE2003 Y LITTLESONIK</a></h6>
+                </div>
+                <div class="cuarto">
+                    <h6>© 2023 INSPIREUP INTERNACIONAL</h6>
+                </div>
             </div>
         </footer>
     </div>
 </body>
+
 </html>
