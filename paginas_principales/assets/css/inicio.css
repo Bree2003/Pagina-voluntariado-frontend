@@ -69,13 +69,13 @@ div.texto>p {
     padding: 0.7em 0;
 }
 
-section.tipos-voluntariados {
+div.tipos-voluntariados {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5em;
 }
 
-section.tipos-voluntariados>article {
+div.tipos-voluntariados>article {
     width: 30%;
     height: 520px;
     text-align: center;
@@ -90,15 +90,15 @@ article>img {
     border-radius: 10px;
 }
 
-section.tipos-voluntariados h1 {
+div.tipos-voluntariados h2 {
     font-size: 2em;
 }
 
-section.tipos-voluntariados h2 {
+div.tipos-voluntariados h3 {
     font-size: 1.5em;
 }
 
-section.tipos-voluntariados p {
+div.tipos-voluntariados p {
     margin: 2em 3em;
 }
 
@@ -108,11 +108,11 @@ section.tipos-voluntariados p {
         margin: 0 10% 1em 10%;
     }
 
-    section.tipos-voluntariados p {
+    div.tipos-voluntariados p {
         margin: 1em 0.5em;
     }
 
-    section.tipos-voluntariados>article {
+    div.tipos-voluntariados>article {
         width: 31%;
     }
 }
@@ -135,11 +135,11 @@ section.tipos-voluntariados p {
         margin: 1em 10% 1em 10%;
     }
 
-    section.tipos-voluntariados {
+    div.tipos-voluntariados {
         display: block;
     }
 
-    section.tipos-voluntariados>article {
+    div.tipos-voluntariados>article {
         width: 100%;
         margin-bottom: 3em;
     }
