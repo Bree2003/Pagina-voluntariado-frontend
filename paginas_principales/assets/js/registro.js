@@ -18,7 +18,7 @@ formulario.addEventListener("submit", async (submitEvent) => {
         contrasena
     };
 
-    const baseUrl = "http://localhost:3000";
+    const baseUrl = "https://pagina-voluntariado-frontend-glitch.glitch.me";
     const url = baseUrl + "/registro";
     const fetchConfig = {
         method: 'POST',
@@ -76,7 +76,8 @@ fetch('https://pagina-voluntariado-frontend.glitch.me/registro-voluntario', {
     .catch(error => console.error(error))
 ; */
 
-/* CON ESTO OCUPABAMOS GLITCH
+/*
+// CON ESTO OCUPABAMOS GLITCH
 
 // recuperar datos del formulario
 const formulario = document.querySelector("form");
@@ -99,7 +100,7 @@ formulario.addEventListener('submit', (evento) => {
         contrasena
     };
 
-    // llamada remota a glitch
+
     fetch('https://pagina-voluntariado-frontend.glitch.me/registro-voluntario', {
         method: 'POST',
         body: JSON.stringify(usuario),

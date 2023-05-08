@@ -8,19 +8,19 @@ const token = objetoUsuario.user.stsTokenManager.accessToken;
 
 // console.log(token);
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://pagina-voluntariado-frontend-glitch.glitch.me';
 const url = baseUrl + '/usuario/checktoken';
 fetch(url, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
-        'Authentication': 'Bearer ' + token;
+        'Authorization': 'Bearer ' + token
     },
     body: ''
 }).then(respuesta => {
-    if !(respuesta.ok) {
+    if (!respuesta.ok) {
         throw new Error("Token no válido");
     }
 }).catch(error => {
-    window.location = "participa.html"
+    // window.location = "participa.html"
 });
